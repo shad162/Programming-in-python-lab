@@ -1,1 +1,2 @@
-# Marker file for PEP 561
+# Instruct type checkers to look for inline type annotations in this package.
+# See PEP 561.
