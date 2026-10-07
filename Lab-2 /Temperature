@@ -1,0 +1,8 @@
+temp=int(input("Enter the temperture: "))
+if temp >30:
+    if temp>40:
+        print("It is really hot outside!")
+    else:
+        print("It is not too hot outside!")
+else:
+    print("It is not hot outside!")     
