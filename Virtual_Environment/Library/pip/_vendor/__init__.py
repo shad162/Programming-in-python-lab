@@ -1,27 +1,8 @@
-__all__ = [
-    "AbstractProvider",
-    "AbstractResolver",
-    "BaseReporter",
-    "InconsistentCandidate",
-    "RequirementsConflicted",
-    "ResolutionError",
-    "ResolutionImpossible",
-    "ResolutionTooDeep",
-    "Resolver",
-    "__version__",
-]
+# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: 2021 Taneli Hukkinen
+# Licensed to PSF under a Contributor Agreement.
 
-__version__ = "1.2.1"
+__all__ = ("loads", "load", "TOMLDecodeError")
+__version__ = "2.4.1"  # DO NOT EDIT THIS LINE MANUALLY. LET bump2version UTILITY DO IT
 
-
-from .providers import AbstractProvider
-from .reporters import BaseReporter
-from .resolvers import (
-    AbstractResolver,
-    InconsistentCandidate,
-    RequirementsConflicted,
-    ResolutionError,
-    ResolutionImpossible,
-    ResolutionTooDeep,
-    Resolver,
-)
+from ._parser import TOMLDecodeError, load, loads
