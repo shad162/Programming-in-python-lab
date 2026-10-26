@@ -1,0 +1,14 @@
+char = input("Enter a character: ")
+
+if len(char) == 1:
+    lower_char = char.lower()
+    
+
+    if lower_char in ["a", "e", "i", "o", "u"]:
+        print("vowel")
+    elif "a" <= lower_char <= "z":
+        print("not vowel")
+    else:
+        print("Invalid input: Not a letter.")
+else:
+    print("Invalid input: Please enter exactly one character.")
