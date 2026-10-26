@@ -1,0 +1,13 @@
+activity = int(input("Enter your activity number: "))
+punctuality = int(input("Enter your punctuality percentage: "))
+
+
+if activity < 0 or punctuality < 0 or punctuality > 100:
+    print("Invalid Input")
+else:
+    if activity >= 8 and punctuality >= 80:
+        print("Highly Engaged")
+    elif activity < 4 and punctuality < 60:
+        print("Needs Improvement")
+    else:
+        print("Moderately Engaged")
