@@ -1,0 +1,40 @@
+def calculate_average(marks):
+    if not marks:
+        return 0.0
+    return sum(marks) / len(marks)
+
+
+def classify_performance(average):
+    if average >= 80:
+        return "Excellent"
+    elif average >= 70:
+        return "Good"
+    elif average >= 60:
+        return "Satisfactory"
+    else:
+        return "Needs Improvement"
+
+
+def display_report(students):
+    print(f"{'ID':<10} {'Name':<20} {'Average':<10} {'Performance'}")
+    print("-" * 55)
+    
+    for student in students:
+        student_id = student['id']
+        name = student['name']
+        marks = student['marks']
+        
+        avg = calculate_average(marks)
+        category = classify_performance(avg)
+        
+        print(f"{student_id:<10} {name:<20} {avg:<10.2f} {category}")
+
+if __name__ == "__main__":
+    student_records = 
+        {"id": "S001", "name": "Alice Smith", "marks": [85, 90, 78]},
+        {"id": "S002", "name": "Bob Jones", "marks": [72, 68, 75]},
+        {"id": "S003", "name": "Charlie Brown", "marks": [60, 65, 58]},
+        {"id": "S004", "name": "Diana Prince", "marks":[77, 61, 78]}
+    
+    
+    display_report(student_records)
